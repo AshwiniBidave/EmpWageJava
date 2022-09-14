@@ -1,6 +1,6 @@
 package com.EmpWage;
 
-public class UC_1 
+public class uc_1 
 {
 	 public static void main(String[] args)
  {

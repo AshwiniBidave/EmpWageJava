@@ -9,14 +9,15 @@ public class UC_1
     public static final int Max_Hrs_In_Month = 100;
 	 public static void main(String[] args)
  {
+    double empcheck = Math.floor(Math.random()*10)%2;
     int empHour = 0;
     int totalworkingdays = 0;
     int totalEmpHrs = 0;
     while (totalEmpHrs <= Max_Hrs_In_Month && totalworkingdays < Num_Of_Working_Days)
     {
         totalworkingdays++;
-        int empcheck =(int) Math.floor(Math.random()*10)%3;
-        switch (empcheck)
+        int empcheck1 =(int) Math.floor(Math.random()*10)%3;
+        switch (empcheck1)
         {
             case Is_Part_Time:
                 empHour = 4;

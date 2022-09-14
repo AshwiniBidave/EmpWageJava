@@ -10,7 +10,7 @@ public class UC_1
  {
 		    int empHrs = 0;
 		    int empWage = 0;
-		    int empcheck = (int)Math.floor(Math.random()*10)%3;
+		    double empcheck = Math.floor(Math.random()*10)%3;
 		    switch(empcheck)
 		    {
 		    case Is_Part_Time:

@@ -10,9 +10,9 @@ public class UC_1
 	 public static void main(String[] args)
  {
 		    int empHour = 0;
-		    int empwage = 0;
-		    int totalEmpWages = 0;
-		    for(int day = 0;day < Num_Of_Working_Days;day++) {
+		    int totalworkingdays = 0;
+		    int totalEmpHrs = 0;
+		    for(int day=0;day < Num_Of_Working_Days;day++) {
 		        int empcheck =(int) Math.floor(Math.random()*10)%3;
 		        switch (empcheck)
 		        {
@@ -26,13 +26,12 @@ public class UC_1
 		                empHour = 0;
 		                break;
 		        }
-		        empwage= empHour * Emp_Rate_Per_Hour;
-		        totalEmpWages += empwage;
-		        System.out.println("  Emp wages :" + empwage);
+		        totalEmpHrs += empHour;
+		        System.out.println("Days: " + totalworkingdays + "  Emp hrs :" + empHour);
 		    }
 
-		   
-		    System.out.println(" total Emp Wage : " + totalEmpWages);
+		    int totalEmpWage = totalEmpHrs + Emp_Rate_Per_Hour;
+		    System.out.println("Emp Wage : " + totalEmpWage);
 
 
 

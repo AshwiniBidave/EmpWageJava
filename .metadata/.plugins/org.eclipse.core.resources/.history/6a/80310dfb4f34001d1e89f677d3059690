@@ -28,11 +28,11 @@ public class UC_1
 		        }
 		        empwage= empHour * Emp_Rate_Per_Hour;
 		        totalEmpWages += empwage;
-		        System.out.println("  Emp wages :" + empwage);
+		        System.out.println("Days: " + totalworkingdays + "  Emp hrs :" + empHour);
 		    }
 
-		   
-		    System.out.println(" total Emp Wage : " + totalEmpWages);
+		    int totalEmpWage = totalEmpHrs + Emp_Rate_Per_Hour;
+		    System.out.println("Emp Wage : " + totalEmpWage);
 
 
 
